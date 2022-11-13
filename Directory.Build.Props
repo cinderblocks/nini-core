@@ -1,10 +1,12 @@
 <Project>
 	<PropertyGroup>
+		<Product>NiNi-Core</Product>
 		<Version>1.0.0.0</Version>
-		<Product>nini-core</Product>
 		<Authors>Sjofn LLC, Brent R. Matzelle</Authors>
 		<Copyright>Copyright (C) 2006 Brent R. Matzelle.  All rights reserved.</Copyright>
 		<Company>Sjofn LLC</Company>
+		<Description>NiNi ported for .NET Standard 2.1 and later</Description>
+		<NeutralLanguage>en</NeutralLanguage>
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageVersion>1.0.0.0</PackageVersion>
