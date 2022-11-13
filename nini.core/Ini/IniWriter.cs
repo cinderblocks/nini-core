@@ -41,7 +41,6 @@ namespace Nini.Ini
 		TextWriter textWriter = null;
 		string eol = "\r\n";
 		StringBuilder indentationBuffer = new StringBuilder ();
-		Stream baseStream = null;
 		bool disposed = false;
 		#endregion
 		
@@ -85,9 +84,6 @@ namespace Nini.Ini
 			get => assignDelimiter;
             set => assignDelimiter = value;
         }
-		
-		/// <include file='IniWriter.xml' path='//Property[@name="BaseStream"]/docs/*' />
-		public Stream BaseStream => baseStream;
 
         #endregion
 		
@@ -102,10 +98,7 @@ namespace Nini.Ini
 		public IniWriter (TextWriter writer)
 		{
 			textWriter = writer;
-            if (writer is StreamWriter streamWriter) {
-				baseStream = streamWriter.BaseStream;
-			}
-		}
+        }
 		
 		/// <include file='IniWriter.xml' path='//Constructor[@name="ConstructorStream"]/docs/*' />
 		public IniWriter (Stream stream)
@@ -202,7 +195,6 @@ namespace Nini.Ini
 			if (!disposed) 
 			{
 				textWriter?.Close();
-				baseStream?.Close();
 				disposed = true;
 
 				if (disposing) 
