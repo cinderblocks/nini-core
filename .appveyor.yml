@@ -51,7 +51,7 @@ deploy:
   - provider: NuGet
     name: nuget_release
     api_key:
-      secure: A0kUKZQCzVX2Wt/pUgN18oYV83YNbRiMBxKczUFE+i0z6x3+CkJKzdYO15npvoKA
+      secure: k3gwzxcOWe/cP381q9soJWsAYepVjydZathovKIxesA0ht1AGQ6A7tpxr/bWHUey
     artifact: /.*nini-core.*(\.|\.s)nupkg/
     skip_symbols: false
     draft: false
