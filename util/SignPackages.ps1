@@ -22,7 +22,7 @@
  
  Write-Output "Signing nupkgs..."
 
-Get-ChildItem -Filter "*.nupkg" -Path "C:\projects\nini-core\" -recurse | ForEach {
+Get-ChildItem -Filter "*.nupkg" -Path "C:\Users\appveyor\AppData\Local\Temp\" -recurse | ForEach {
 	Write-Output $("Signing " + $_.Name + "...")
 	nuget sign $_.FullName -NonInteractive -Verbosity quiet `
 						   -CertificateFingerprint 4FC4D098D5CF0C88769B0CE1ED45ABE6B9A8F879 `
