@@ -8,7 +8,6 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<PackageVersion>1.0.0.0</PackageVersion>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseExpression>X11</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/cinderblocks/nini-core</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
