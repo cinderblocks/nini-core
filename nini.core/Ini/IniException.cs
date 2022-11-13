@@ -88,8 +88,7 @@ namespace Nini.Ini
 		#region Public methods
 
 		/// <include file='IniException.xml' path='//Method[@name="GetObjectData"]/docs/*' />
-		[SecurityPermissionAttribute(SecurityAction.Demand,SerializationFormatter=true)]
-		public override void GetObjectData (SerializationInfo info, 
+        public override void GetObjectData (SerializationInfo info, 
 											StreamingContext context)
 		{
 			base.GetObjectData (info, context);
